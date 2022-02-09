@@ -64,8 +64,6 @@
 (defn solve-multiples [sum]
   (reverse (reduce mult-reducer () sum)))
 
-(solve-multiples (partition 2 (split-sum "1+4*2")))
-
 (defn add-reducer [acc item]
   (let [op (first item)
         val (last item)]
