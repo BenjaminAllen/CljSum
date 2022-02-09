@@ -91,7 +91,6 @@
 
                   (= head :open_bracket)
                   (let [[to-solve rest] (split-brackets tail)]
-                    (println "to-solve" to-solve "rest" rest)
                     (recur rest (conj stack (solve to-solve))))
 
                   :else
